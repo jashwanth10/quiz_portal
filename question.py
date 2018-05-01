@@ -2,7 +2,7 @@ import smtplib
 def fun(mail,otp):
     s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
-    s.login("viveknannaka945@gmail.com", "Vivek$945&$nannaka")
+    s.login("your mail", "your mail password")
     message = str(otp)+" "+"is your quiz portal verification code"
-    s.sendmail("viveknannaka945@gmail.com", mail, message)
+    s.sendmail("your mail", mail, message)
     s.quit()
